@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מתרגלים ומצליחים בבגרות בתקשוב | יא'7 המורה סהר</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;700;800;900&family=Assistant:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg-main: #fbf9f5;
+  --card-bg: #ffffff;
+  --primary-blue: #2563eb;
+  --primary-blue-hover: #1d4ed8;
+  --soft-blue: #eff6ff;
+  --border-color: #e2e8f0;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --accent-green: #10b981;
+  --accent-amber: #f59e0b;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Assistant', 'Rubik', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  line-height: 1.6;
+  padding-bottom: 80px;
+}
+
+/* ============ TOP NAV ============ */
+.top-nav {
+  max-width: 1200px;
+  margin: 20px auto 10px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subject-badge {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(3, 105, 161, 0.1);
+}
+
+.brand-badge {
+  background: var(--primary-blue);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+/* ============ HERO HEADER ============ */
+.hero-wrapper {
+  max-width: 1200px;
+  margin: 20px auto 35px;
+  padding: 0 20px;
+}
+
+.hero-content {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 30px 40px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text-right {
+  text-align: right;
+  flex: 1;
+}
+
+.hero-text-right h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.hero-text-right p {
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.hero-logos-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #f8fafc;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 1px solid #e2e8f0;
+}
+
+.hero-logo-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease;
+}
+
+.hero-logo-img:hover {
+  transform: scale(1.08);
+}
+
+/* ============ MENTOR SECTION ============ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mentor-card {
+  background: #f0f7ff;
+  border: 1px solid #c7d2fe;
+  border-radius: var(--radius-lg);
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.mentor-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mentor-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #1e3a8a;
+}
+
+.mentor-desc {
+  font-size: 14px;
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+.motivation-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.motivation-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ============ PARTS TABS ============ */
+.parts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.part-tab {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.part-tab.active {
+  background: var(--primary-blue);
+  color: white;
+  border-color: var(--primary-blue);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.part-tab .part-num {
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.8;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.part-tab .part-name {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+/* ============ CONTENT PANEL & TASKS ============ */
+.content-panel {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 15px;
+}
+
+.panel-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--text-dark);
+}
+
+.progress-pill {
+  background: #f1f5f9;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--primary-blue);
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.task-card.completed {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.task-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--accent-green);
+}
+
+.task-info h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.task-btn {
+  background: white;
+  border: 1px solid var(--primary-blue);
+  color: var(--primary-blue);
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.task-btn:hover {
+  background: var(--primary-blue);
+  color: white;
+}
+
+/* ============ FLOATING BOT WIDGET ============ */
+.bot-widget {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 240px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  z-index: 9999;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.bot-widget.collapsed {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bot-header {
+  background: #0f172a;
+  color: white;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.bot-body {
+  padding: 14px;
+  text-align: center;
+}
+
+.bot-widget.collapsed .bot-header,
+.bot-widget.collapsed .bot-body > *:not(.bot-avatar) {
+  display: none;
+}
+
+.bot-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-blue);
+  margin: 0 auto 8px;
+}
+
+.bot-link {
+  display: block;
+  background: #10b981;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .hero-content { flex-direction: column; text-align: center; }
+  .hero-text-right { text-align: center; }
+  .parts-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="top-nav">
+  <div class="subject-badge">
+    📚 יא'7 לומדים תקשוב עם המורה סהר
+  </div>
+  <div class="brand-badge">
+    אקדמיית התקשוב
+  </div>
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero-wrapper">
+  <div class="hero-content">
+    <div class="hero-text-right">
+      <h1>יא'7 לומדים תקשוב עם המורה סהר 🚀</h1>
+      <p>תרגול רציף לבגרות בתקשוב – לחץ על 'פתח טופס' לפתיחה מיידית של המבדק!</p>
+    </div>
+    <div class="hero-logos-left">
+      <img src="https://lh3.googleusercontent.com/d/1oIkZlLHZWtFgoDblyxziTALQZwsyxAOo" class="hero-logo-img" alt="לוגו 1">
+      <img src="https://lh3.googleusercontent.com/d/1vgLFfYxDKLinPryu_9dK7g7HZV7QIrnL" class="hero-logo-img" alt="לוגו 2">
+      <img src="https://lh3.googleusercontent.com/d/1va1dQzAizB784PSXU3j8j2zbvB5XYozW" class="hero-logo-img" alt="לוגו 3">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- MENTOR BOX -->
+  <div class="mentor-card">
+    <div class="mentor-info">
+      <span style="font-size: 38px;">🧙‍♂️</span>
+      <div>
+        <div class="mentor-title">פינת המנטור המטורלל:</div>
+        <div class="mentor-desc" id="motivationQuote">לחצו על הכפתור משמאל או סמנו שלבים כדי לקבל זריקת אנרגיה מטורללת!</div>
+      </div>
+    </div>
+    <button class="motivation-btn" onclick="generateMotivation()">
+      תדלק אותי במוטיבציה! ⚡
+    </button>
+  </div>
+
+  <!-- PARTS NAVIGATION TABS -->
+  <div class="parts-grid">
+    <div class="part-tab active" onclick="switchPart(1, this)">
+      <span class="part-num">חלק 1 מתוך 3</span>
+      <div class="part-name">🌐 מבדקים 1-15 (בסיס, IP, המרות)</div>
+    </div>
+    <div class="part-tab" onclick="switchPart(2, this)">
+      <span class="part-num">חלק 2 מתוך 3</span>
+      <div class="part-name">🔀 מבדקים 16-23 (מתכונות והכנה)</div>
+    </div>
+    <div class="part-tab" onclick="switchPart(3, this)">
+      <span class="part-num">חלק 3 מתוך 3</span>
+      <div class="part-name">🏆 מבדקים 24-38 (בגרויות ושאלונים)</div>
+    </div>
+  </div>
+
+  <!-- CONTENT PANEL -->
+  <div class="content-panel">
+    
+    <!-- PART 1: TASKS 1 TO 15 -->
+    <div id="part1" class="part-content">
+      <div class="panel-header">
+        <div class="panel-title">🎯 חלק א': בסיס, IP, מודל השכבות והמרות (משימות 1-15)</div>
+        <div class="progress-pill" id="progressPart1">הושלמו 0 מתוך 18 משימות</div>
+      </div>
+      <div class="tasks-list">
+        <div class="task-card" id="task-1"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-1')"><div class="task-info"><h4>1. בוחן כתובות IP</h4></div></div><a href="https://forms.gle/aAnLWU4pYM3oSr1D9" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-2"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-2')"><div class="task-info"><h4>2. בוחן שני כתובות IP</h4></div></div><a href="https://forms.gle/n79eXf2uoHC9cYVn9" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-3"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-3')"><div class="task-info"><h4>3. בוחן שלישי כתובת IP - חדש !!!</h4></div></div><a href="https://docs.google.com/forms/d/e/1FAIpQLSdA5nK0aeP0d3GC_nGHA_yrS7AKjTsqJGlrUx05vAktdhlB5w/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-4"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-4')"><div class="task-info"><h4>4. בוחן בנושא מודל השכבות - שאלות בגרות</h4></div></div><a href="https://docs.google.com/forms/d/e/1FAIpQLSfPuyfsrxsTG_myaiZ5uRIU25_GwuUBGvKtgPtYwyMsL65QlQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-5"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-5')"><div class="task-info"><h4>5. הכרות דף עזר</h4></div></div><a href="https://forms.gle/PAZ3T4FVXzZ19N9f6" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-6"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-6')"><div class="task-info"><h4>6. המרות</h4></div></div><a href="https://forms.gle/iiFmvWYdu2UKZgdf6" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-7"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-7')"><div class="task-info"><h4>7. הכנה למבחן רבעון</h4></div></div><a href="https://forms.gle/eq4BjMmCxvkxJBJNA" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-8"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-8')"><div class="task-info"><h4>8. הכנה שני למבחן רבעון</h4></div></div><a href="https://forms.gle/RusH74BDdB7N43vm8" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-81"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-81')"><div class="task-info"><h4>8.1. מודל שבע השכבות - בוחן 2</h4></div></div><a href="https://forms.gle/U91KWqx9KYa7S4e56" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-82"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-82')"><div class="task-info"><h4>8.2. פרוטוקולים ופורטים - בוחן 2</h4></div></div><a href="https://forms.gle/BHLTK1DVdXHN2Y1M7" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-83"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-83')"><div class="task-info"><h4>8.3. בוחן מסכם וילאנים</h4></div></div><a href="https://forms.gle/v9hAisCb5BJzGivKA" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-84"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-84')"><div class="task-info"><h4>8.4. בוחן מסכם פרוטוקול ניתוב</h4></div></div><a href="https://forms.gle/95b2kVQp6SaKML7M7" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-85"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-85')"><div class="task-info"><h4>8.5. בוחן בנושא ניתוב וילאנים ROUTER ON STICK</h4></div></div><a href="https://forms.gle/kBrmdEmSJFmo3wm18" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-86"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-86')"><div class="task-info"><h4>8.6. בוחן מסכם פרוטוקול NAT</h4></div></div><a href="https://forms.gle/qad67mWU4pPvu9BRA" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-87"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-87')"><div class="task-info"><h4>8.7. בוחן מסכם רשימת גישה ACL</h4></div></div><a href="https://forms.gle/6hdosjTvD2vh1jp69" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-88"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-88')"><div class="task-info"><h4>8.8. בוחן בנושא פקודות ברשת</h4></div></div><a href="https://forms.gle/UyiHkXRi85HtgfUNA" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-9"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-9')"><div class="task-info"><h4>9. מבחן רשתות אחרי החגים</h4></div></div><a href="https://forms.gle/Sy9cuALczUtfaijv8" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-1011"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-1011')"><div class="task-info"><h4>10+11. בוחן סיכום בסיס רשתות</h4></div></div><a href="https://forms.gle/iLogRJh9T2mR9U859" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+      </div>
+    </div>
+
+    <!-- PART 2: TASKS 12 TO 23 -->
+    <div id="part2" class="part-content" style="display: none;">
+      <div class="panel-header">
+        <div class="panel-title">⚡ חלק ב': בחנים, מתכונות והכנה לבגרות (משימות 12-23)</div>
+        <div class="progress-pill" id="progressPart2">הושלמו 0 מתוך 13 משימות</div>
+      </div>
+      <div class="tasks-list">
+        <div class="task-card" id="task-12"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-12')"><div class="task-info"><h4>12. בוחן 2 בתקשוב 70% - כתה יא</h4></div></div><a href="https://forms.gle/tuAKNNeQv9Ccqri29" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-13"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-13')"><div class="task-info"><h4>13. בוחן בתקשוב 70% - לתרגול בכתה</h4></div></div><a href="https://forms.gle/edg3HQz5WDcEVrfMA" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-14"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-14')"><div class="task-info"><h4>14. מבדק יא7 12/25 בסיס והמרות 791367</h4></div></div><a href="https://forms.gle/TVZeAqz7uxk5YqyD9" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-15"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-15')"><div class="task-info"><h4>15. בוחן בתקשוב בגרות 791381 יא7 כללי</h4></div></div><a href="https://docs.google.com/forms/d/1L9avamVE5WKlmxq5RA2ck2aUDExiHYe9QBUUbnFC9aE/preview" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-151"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-151')"><div class="task-info"><h4>15.1. מבחן כיתה כלל החומר עד כה</h4></div></div><a href="https://docs.google.com/forms/d/e/1FAIpQLSejEk7fpnXYVgy8aFOfQScE4kynbA_7KGkwYXt4UbWa1izwlg/viewform?usp=sharing&ouid=113437576564980980412" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-16"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-16')"><div class="task-info"><h4>16. בוחן יא7 1/25 כולל המרות</h4></div></div><a href="https://forms.gle/Jv94HtBMDz9JVKwJ9" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-17"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-17')"><div class="task-info"><h4>17. בוחן בתקשוב יא7 - 791381 - 1/25</h4></div></div><a href="https://forms.gle/qaM9F2RnkMhiQGQj7" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-18"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-18')"><div class="task-info"><h4>18. בוחן הכנה קצר פברואר 2025</h4></div></div><a href="https://forms.gle/bnDVrUguAJH5dgas8" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-19"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-19')"><div class="task-info"><h4>19. הכנה למתכונת יא7 כולל המרות - פברואר 26</h4></div></div><a href="https://docs.google.com/forms/d/e/1FAIpQLScW2u7H7OfHxYnabMN9iNGFRL_TmiIjeVr2dH7-ntnUjHSB3g/viewform?usp=sharing&ouid=113504603231172728145" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-20"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-20')"><div class="task-info"><h4>20. מתכונת 1 לדוגמא-(מיתוג)</h4></div></div><a href="https://forms.gle/GbCAJLMind5QTabr5" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-21"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-21')"><div class="task-info"><h4>21. מתכונת 2 לדוגמא (ניתוב)</h4></div></div><a href="https://docs.google.com/forms/d/e/1FAIpQLSf8_mj6soaijyB0fmZq4F09EiO3uY3fstfxjYcp4sBRRsgMNA/viewform?usp=sharing&ouid=113437576564980980412" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-22"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-22')"><div class="task-info"><h4>22. מבדק הכנה לבגרות בתקשוב 70% יא7 3/26</h4></div></div><a href="https://forms.gle/MFygRDM4PQtttgnB6" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-23"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-23')"><div class="task-info"><h4>23. מבדק לבגרות</h4></div></div><a href="https://forms.gle/4m7yNkeDPj6CkN8W9" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+      </div>
+    </div>
+
+    <!-- PART 3: TASKS 24 TO 38 -->
+    <div id="part3" class="part-content" style="display: none;">
+      <div class="panel-header">
+        <div class="panel-title">🏆 חלק ג': שאלוני בגרות ומבחני בגרות רשמיים (משימות 24-38)</div>
+        <div class="progress-pill" id="progressPart3">הושלמו 0 מתוך 15 משימות</div>
+      </div>
+      <div class="tasks-list">
+        <div class="task-card" id="task-24"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-24')"><div class="task-info"><h4>24. בגרות 2018</h4></div></div><a href="https://forms.gle/jcXyHci24Qy4HUXj9" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-25"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-25')"><div class="task-info"><h4>25. בגרות 2019</h4></div></div><a href="https://forms.gle/U5pLscqqwUihjo7f9" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-26"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-26')"><div class="task-info"><h4>26. בגרות 2021</h4></div></div><a href="https://docs.google.com/forms/d/e/1FAIpQLScnvsxdsOy_PxWUnZSkvsAYAupBNvGHvddmdKSnx36F8t0kiA/viewform?usp=sharing&ouid=113504603231172728145" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-27"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-27')"><div class="task-info"><h4>27. בגרות 2022</h4></div></div><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3SF7DopQbWGn4jB_nIPm7fx8Zx8hZDRU1ChfhLYkxK1Y-lw/viewform" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-28"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-28')"><div class="task-info"><h4>28. שאלון השלמה 2023 מבחן 773501</h4></div></div><a href="https://forms.gle/ydgiXG3dXXpXJFXE6" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-29"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-29')"><div class="task-info"><h4>29. תרגול מסכם לבגרות 773501 אביב 2023</h4></div></div><a href="https://forms.gle/GryeCE1Efm26UufP8" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-30"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-30')"><div class="task-info"><h4>30. מבחן השלמה 2025 שאלון 773501</h4></div></div><a href="https://forms.gle/HY3UoVSXS1bmAnkLA" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-31"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-31')"><div class="task-info"><h4>31. הכנה לבגרות 2026</h4></div></div><a href="https://docs.google.com/forms/d/1E0my1sc3dGqEjNiB9WCpKyi_JC2ZmdElgJjmaWp9Byw/preview" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-32"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-32')"><div class="task-info"><h4>32. מבחן שאלון 791367 בגרות תשפ"ג</h4></div></div><a href="https://forms.gle/NxjnrD69wYk8SwBdA" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-33"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-33')"><div class="task-info"><h4>33. בגרות תשפ"ג</h4></div></div><a href="https://forms.gle/AmTXPMFshsgscR8C6" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-34"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-34')"><div class="task-info"><h4>34. בגרות דוגמא תשפ"ד</h4></div></div><a href="https://forms.gle/oGcQmvjVnqvEFz3s9" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-35"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-35')"><div class="task-info"><h4>35. בגרות תשפ"ד</h4></div></div><a href="https://forms.gle/9eMaQHuQPVrAJHzC7" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-36"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-36')"><div class="task-info"><h4>36. בגרות תשפ"ה</h4></div></div><a href="https://docs.google.com/forms/d/e/1FAIpQLSfDjDd1GnNb8K5cxw-sMYf1-EndMFDFbOtBUPJXLcIcJUK8xQ/viewform?usp=sharing&ouid=101436836042749727752" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-37"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-37')"><div class="task-info"><h4>37. שאלון השלמה 2024 מבחן 773501</h4></div></div><a href="https://forms.gle/t2hyHjwXh8mU6Sz18" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+        <div class="task-card" id="task-38"><div class="task-main"><input type="checkbox" class="task-checkbox" onchange="toggleTask('task-38')"><div class="task-info"><h4>38. בגרות תשפ"ו</h4></div></div><a href="https://forms.gle/CyVzdMyQgTMZo2QeA" target="_blank" rel="noopener noreferrer" class="task-btn">פתח טופס ↗</a></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FLOATING BOT WIDGET -->
+<div class="bot-widget collapsed" id="botWidget" onclick="expandBot(event)">
+  <div class="bot-header" onclick="toggleBot(event)">
+    <span>NODE: SAHAR-BOT</span>
+    <span>✕</span>
+  </div>
+  <div class="bot-body">
+    <img src="https://lh3.googleusercontent.com/d/1oIkZlLHZWtFgoDblyxziTALQZwsyxAOo" class="bot-avatar" alt="Sahar Bot">
+    <div style="font-weight:800; font-size:13px; color:#0f172a;">עוזר הבגרות יא'7 🤖</div>
+    <div style="font-size:11px; color:#64748b; margin-bottom:8px;">צריך עזרה בתקשורת או בפתרון שאלת בגרות?</div>
+    <a href="https://gemini.google.com/gem/13FFjtbW5S3yg0EE1qBEQiP8GEMwoepKu?usp=sharing" target="_blank" class="bot-link">$ connect --dan-gpt</a>
+  </div>
+</div>
+
+<script>
+const quotes = [
+  "יא'7 אלופים! כל מבדק שאתם מסיימים מקרב אתכם ל-100 עגול בבגרות! 🔥",
+  "תקשורת נתונים זה לא קסם - זה היגיון ופרוטוקולים. תמשיכו להפציץ! 💪",
+  "VLANs, ACLs, IP Subnetting - קטן על תלמידי סהר! 🚀",
+  "המורה סהר גאה בכם! תעברו על 38 המבחנים והבגרות שלכם בכיס! 🏆"
+];
+
+function generateMotivation() {
+  const rand = Math.floor(Math.random() * quotes.length);
+  document.getElementById('motivationQuote').innerText = quotes[rand];
+}
+
+function switchPart(partNum, element) {
+  document.querySelectorAll('.part-tab').forEach(tab => tab.classList.remove('active'));
+  document.querySelectorAll('.part-content').forEach(content => content.style.display = 'none');
+  
+  element.classList.add('active');
+  document.getElementById('part' + partNum).style.display = 'block';
+}
+
+function toggleTask(taskId) {
+  const taskEl = document.getElementById(taskId);
+  const checkbox = taskEl.querySelector('.task-checkbox');
+  
+  if (checkbox.checked) {
+    taskEl.classList.add('completed');
+    localStorage.setItem(taskId, 'true');
+  } else {
+    taskEl.classList.remove('completed');
+    localStorage.setItem(taskId, 'false');
+  }
+  updateProgress();
+}
+
+function updateProgress() {
+  ['part1', 'part2', 'part3'].forEach((part, index) => {
+    const partEl = document.getElementById(part);
+    if(!partEl) return;
+    const total = partEl.querySelectorAll('.task-card').length;
+    const completed = partEl.querySelectorAll('.task-card.completed').length;
+    const progEl = document.getElementById(`progressPart${index+1}`);
+    if(progEl) {
+      progEl.innerText = `הושלמו ${completed} מתוך ${total} משימות`;
+    }
+  });
+}
+
+function toggleBot(e) {
+  e.stopPropagation();
+  document.getElementById('botWidget').classList.toggle('collapsed');
+}
+
+function expandBot(e) {
+  const widget = document.getElementById('botWidget');
+  if (widget.classList.contains('collapsed')) {
+    widget.classList.remove('collapsed');
+  }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.task-card').forEach(card => {
+    const isDone = localStorage.getItem(card.id) === 'true';
+    if (isDone) {
+      card.classList.add('completed');
+      card.querySelector('.task-checkbox').checked = true;
+    }
+  });
+  updateProgress();
+});
+</script>
+
+</body>
+</html>
